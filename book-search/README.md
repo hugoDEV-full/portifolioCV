@@ -1,20 +1,24 @@
 
-# Blog System
+---
+
+### 2. **book-search**
+
+```markdown
+# Book Search
 
 ## Descrição
-Este sistema permite que os usuários criem, editem e excluam postagens de blog. Também oferece uma interface para comentários em tempo real.
+Aplicativo que permite aos usuários procurar livros usando uma API externa. Inclui funcionalidade de favoritos e histórico de pesquisa.
 
 ## Tecnologias Utilizadas
 - JavaScript
-- EJS
 - Node.js
-- WebSocket
-- MongoDB
+- Express.js
+- API de Livros (Google Books API)
 
 ## Funcionalidades
-- Criar, editar e excluir postagens de blog
-- Sistema de comentários em tempo real
-- Autenticação de usuários
+- Buscar livros por título ou autor
+- Favoritar livros para consulta futura
+- Histórico de buscas
 
 ## Como Executar
 1. Clone o repositório: `git clone <repo-url>`

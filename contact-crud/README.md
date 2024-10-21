@@ -1,20 +1,25 @@
 
-# Blog System
+---
+
+### 3. **contact-crud**
+
+```markdown
+# Contact CRUD
 
 ## Descrição
-Este sistema permite que os usuários criem, editem e excluam postagens de blog. Também oferece uma interface para comentários em tempo real.
+Sistema de CRUD (Create, Read, Update, Delete) para gerenciar contatos. Os usuários podem adicionar, editar e remover informações de contato.
 
 ## Tecnologias Utilizadas
 - JavaScript
-- EJS
 - Node.js
-- WebSocket
+- Express.js
 - MongoDB
 
 ## Funcionalidades
-- Criar, editar e excluir postagens de blog
-- Sistema de comentários em tempo real
-- Autenticação de usuários
+- Adicionar contatos
+- Editar contatos
+- Remover contatos
+- Pesquisar contatos
 
 ## Como Executar
 1. Clone o repositório: `git clone <repo-url>`

@@ -1,20 +1,23 @@
 
-# Blog System
+---
+
+### 7. **todo-app**
+
+```markdown
+# Todo App
 
 ## Descrição
-Este sistema permite que os usuários criem, editem e excluam postagens de blog. Também oferece uma interface para comentários em tempo real.
+Aplicativo de lista de tarefas onde os usuários podem adicionar, marcar como concluído e remover tarefas. Inclui sincronização em tempo real.
 
 ## Tecnologias Utilizadas
 - JavaScript
-- EJS
 - Node.js
 - WebSocket
-- MongoDB
 
 ## Funcionalidades
-- Criar, editar e excluir postagens de blog
-- Sistema de comentários em tempo real
-- Autenticação de usuários
+- Adicionar tarefas
+- Marcar tarefas como concluídas
+- Remover tarefas
 
 ## Como Executar
 1. Clone o repositório: `git clone <repo-url>`

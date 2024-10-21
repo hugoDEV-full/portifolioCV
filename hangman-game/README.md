@@ -1,20 +1,23 @@
 
-# Blog System
+---
+
+### 4. **hangman-game**
+
+```markdown
+# Hangman Game
 
 ## Descrição
-Este sistema permite que os usuários criem, editem e excluam postagens de blog. Também oferece uma interface para comentários em tempo real.
+Jogo da forca desenvolvido com JavaScript e Node.js. Os usuários podem jogar contra o sistema e o progresso é salvo em tempo real.
 
 ## Tecnologias Utilizadas
 - JavaScript
-- EJS
 - Node.js
 - WebSocket
-- MongoDB
 
 ## Funcionalidades
-- Criar, editar e excluir postagens de blog
-- Sistema de comentários em tempo real
-- Autenticação de usuários
+- Jogar jogo da forca
+- Progressão salva em tempo real
+- Sistema de pontuação
 
 ## Como Executar
 1. Clone o repositório: `git clone <repo-url>`

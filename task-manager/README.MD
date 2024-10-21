@@ -1,26 +1,30 @@
-# Sistema de Gerenciamento de Tarefas
+
+---
+
+### 6. **task-manager**
+
+```markdown
+# Task Manager
 
 ## Descrição
-Este sistema permite que usuários adicionem, editem e removam tarefas. As atualizações são feitas em tempo real entre os usuários utilizando WebSocket.
+Sistema de gerenciamento de tarefas, onde os usuários podem criar, editar e excluir tarefas. Utiliza WebSocket para atualizações em tempo real.
 
 ## Tecnologias Utilizadas
 - JavaScript
 - EJS
-- Bootstrap
 - Node.js
 - WebSocket
 
 ## Funcionalidades
-- Adicionar novas tarefas
-- Editar tarefas existentes
-- Remover tarefas
-- Atualizações em tempo real via WebSocket
+- Criar, editar e excluir tarefas
+- Atualizações em tempo real
+- Organização por categorias
 
 ## Como Executar
-1. Clone o repositório.
+1. Clone o repositório: `git clone <repo-url>`
 2. Instale as dependências: `npm install`
 3. Execute o servidor: `npm start`
-4. Acesse `http://localhost:3000` no seu navegador.
+4. Acesse `http://localhost:3000`
 
 ## Estrutura de Pastas
 ```bash
@@ -28,3 +32,4 @@ Este sistema permite que usuários adicionem, editem e removam tarefas. As atual
 |-- views/
 |-- app.js
 |-- package.json
+|-- routes/

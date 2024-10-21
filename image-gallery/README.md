@@ -1,20 +1,24 @@
 
-# Blog System
+---
+
+### 5. **image-gallery**
+
+```markdown
+# Image Gallery
 
 ## Descrição
-Este sistema permite que os usuários criem, editem e excluam postagens de blog. Também oferece uma interface para comentários em tempo real.
+Galeria de imagens onde os usuários podem fazer upload, visualizar e remover imagens. Inclui sistema de pesquisa e categorias.
 
 ## Tecnologias Utilizadas
 - JavaScript
-- EJS
 - Node.js
-- WebSocket
+- Express.js
 - MongoDB
 
 ## Funcionalidades
-- Criar, editar e excluir postagens de blog
-- Sistema de comentários em tempo real
-- Autenticação de usuários
+- Upload de imagens
+- Visualizar e pesquisar imagens
+- Remover imagens
 
 ## Como Executar
 1. Clone o repositório: `git clone <repo-url>`
