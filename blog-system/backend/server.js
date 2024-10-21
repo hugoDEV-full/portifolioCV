@@ -21,7 +21,7 @@ app.post('/add-post', (req, res) => {
     posts.push({ title, content });
     res.redirect('/');
 });
-
+// serviço em 
 app.listen(3004, () => {
     console.log('Servidor rodando em http://localhost:3004');
 });
