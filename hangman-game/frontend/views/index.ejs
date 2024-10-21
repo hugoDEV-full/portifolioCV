@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Jogo da Forca</h1>
+        <h2>Tente adivinhar a palavra!</h2>
+        <h3>Palavra: 
+            <% currentWord.split('').forEach((letter) => { %>
+                <% if (guessedLetters.includes(letter)) { %>
+                    <%= letter %> 
+                <% } else { %>
+                    _ 
+                <% } %>
+            <% }) %>
+        </h3>
+        <h4>Tentativas restantes: <%= attempts %></h4>
+        <form action="/guess" method="POST">
+            <input type="text" name="letter" maxlength="1" required>
+            <button class="btn btn-primary">Adivinhar</button>
+        </form>
+        <h5>Letras adivinhadas: <%= guessedLetters.join(', ') %></h5>
+    </div>
+</body>
+</html>

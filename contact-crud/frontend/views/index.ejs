@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>CRUD de Contatos</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">CRUD de Contatos</h1>
+        <form action="/contacts" method="POST">
+            <div class="input-group mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Adicionar</button>
+                </div>
+            </div>
+        </form>
+        <ul class="list-group">
+            <% contacts.forEach((contact, index) => { %>
+                <li class="list-group-item">
+                    <%= contact.name %> - <%= contact.email %>
+                    <form action="/contacts/delete" method="POST" style="display:inline;">
+                        <input type="hidden" name="index" value="<%= index %>">
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </form>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

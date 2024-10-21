@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Blog Pessoal</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Meu Blog Pessoal</h1>
+        <form action="/add-post" method="POST">
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" class="form-control" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Conteúdo:</label>
+                <textarea class="form-control" name="content" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar Post</button>
+        </form>
+        <hr>
+        <h2 class="mt-5">Posts</h2>
+        <% posts.forEach(post => { %>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title"><%= post.title %></h5>
+                    <p class="card-text"><%= post.content %></p>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Galeria de Imagens</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Galeria de Imagens</h1>
+        <div class="row">
+            <% images.forEach((image) => { %>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="<%= image.src %>" class="card-img-top" alt="<%= image.alt %>">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= image.alt %></h5>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

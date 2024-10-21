@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registro de Usuários</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Registro de Usuários</h1>
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" class="form-control" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+        <hr>
+        <h2 class="mt-5">Usuários Registrados</h2>
+        <ul class="list-group">
+            <% users.forEach(user => { %>
+                <li class="list-group-item"><%= user.username %> - <%= user.email %></li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>
